@@ -1,0 +1,333 @@
+//org
+
+RRRRR  EEEEEE NN  NN DDDDD  EEEEEE RRRRR
+RR  RR EE     NNN NN DD  DD EE     RR  RR
+RRRRR  EEEE   NNNNNN DD  DD EEEE   RRRRR
+RR  RR EE     NN NNN DD  DD EE     RR  RR
+RR  RR EEEEEE NN  NN DDDDD  EEEEEE RR  RR
+
+TTTTTT RRRRR    AA   NN  NN  SSSSS FFFFFF OOOO  RRRRR  MM   MM
+  TT   RR  RR  AAAA  NNN NN SS     FF    OO  OO RR  RR MMM MMM
+  TT   RRRRR  AA  AA NNNNNN  SSSS  FFFF  OO  OO RRRRR  MMMMMMM
+  TT   RR  RR AAAAAA NN NNN     SS FF    OO  OO RR  RR MM M MM
+  TT   RR  RR AA  AA NN  NN SSSSS  FF     OOOO  RR  RR MM   MM
+
+PPPPP  RRRRR   OOOO      JJ EEEEEE  CCCC  TTTTTT
+PP  PP RR  RR OO  OO     JJ EE     CC  CC   TT
+PPPPP  RRRRR  OO  OO     JJ EEEE   CC       TT
+PP     RR  RR OO  OO JJ  JJ EE     CC  CC   TT
+PP     RR  RR  OOOO   JJJJ  EEEEEE  CCCC    TT
+
+
+/*small
+
+  AA    BBBBB    CCCC    DDDDD    EEEEEE   FFFFFF   GGGG   HH  HH   II
+ AAAA   BB  BB  CC  CC   DD  DD   EE       FF      GG  GG  HH  HH   II
+AA  AA  BBBBB   C        DD  DD   EEEE     FFFF    G       HHHHHH   II
+AAAAAA  BB  BB  CC  CC   DD  DD   EE       FF      GG GGG  HH  HH   II
+AA  AA  BBBBB    CCCC    DDDDD    EEEEEE   FF       GGG G  HH  HH   II
+                
+    JJ  KK  KK  LL       MM   MM  NN  NN    OOOO    PPPPP   QQQQ     RRRRR 
+    JJ  KK KK   LL       MMM MMM  NNN NN   OO  OO   PP  PP QQ  QQ    RR  RR
+    JJ  KKKK    LL       MMMMMMM  NNNNNN   OO  OO   PPPPP  Q  Q Q    RRRRR 
+JJ  JJ  KK KK   LL       MM M MM  NN NNN   OO  OO   PP     QQ  QQ    RR  RR
+ JJJJ   KK  KK  LLLLLL   MM   MM  NN  NN    OOOO    PP      QQQQ Q   RR  RR
+
+ SSSSS  TTTTTT  UU  UU   VV  VV   WW   WW   XX  XX  YY  YY  ZZZZZZ      //    &&
+SS        TT    UU  UU   VV  VV   WW W WW   XX  XX  YY  YY     ZZ      //    && &
+ SSSS     TT    UU  UU   VV  VV   WWWWWWW    XXXX    YYYY     ZZ      //      &&&
+    SS    TT    UU  UU    VVVV    WWW WWW   XX  XX    YY     ZZ      //     &   &&
+SSSSS     TT     UUUU      VV     WW   WW   XX  XX    YY    ZZZZZZ  //       &&& &
+
+*/
+
+/*smaller
+
+ AA  BBB   CCC DDD  EEEE FFFF  GGG H  H II   JJ  K  K L    M  M N  N  OO  PPP   QQ  RRR   SSS TTTT
+AAAA BBBB C    D  D E    F    G    H  H II   JJ  KK   L    MMMM NN N O  O P  P Q  Q R  R SS    TT
+AAAA BBB  C    D  D EEE  FFF  G GG HHHH II J JJ  K K  L    MMMM N NN O  O PPP  Q QQ RRR    SS  TT
+A  A BBBB  CCC DDD  EEEE F     GGG H  H II  JJ   K  K LLLL M  M N  N  OO  P     Q Q R  R SSS   TT
+
+U  U V  V W  W X  X Y  Y ZZZZ     /
+U  U V  V WWWW  XX  Y  Y   Z     /
+U  U V  V WWWW  XX   YY   Z     /
+UUUU  VV   WW  X  X  YY  ZZZZ  /
+
+*/
+
+/*//___________________________________________________________________________________________________
+                                                                                      　private property
+   
+                                     PPPPP  RRRRR   OOOO  PPPPP  EEEEEE RRRRR  TTTTTT YY  YY
+   PPP  RRR  II V  V  AA  TTTT EEEE  PP  PP RR  RR OO  OO PP  PP EE     RR  RR   TT   YY  YY
+   P  P R  R II V  V AAAA  TT  E     PPPPP  RRRRR  OO  OO PPPPP  EEEE   RRRRR    TT    YYYY 
+   PPP  RRR  II V  V AAAA  TT  EEE   PP     RR  RR OO  OO PP     EE     RR  RR   TT     YY  
+   P    R  R II  VV  A  A  TT  EEEE  PP     RR  RR  OOOO  PP     EEEEEE RR  RR   TT     YY           */
+
+/*//___________________________________________________________________________________________________
+                                                                                      　 public property
+
+                                PPPPP  RRRRR   OOOO  PPPPP  EEEEEE RRRRR  TTTTTT YY  YY
+   PPP  U  U BBB  L    II  CCC  PP  PP RR  RR OO  OO PP  PP EE     RR  RR   TT   YY  YY
+   P  P U  U BBBB L    II C     PPPPP  RRRRR  OO  OO PPPPP  EEEE   RRRRR    TT    YYYY 
+   PPP  U  U BBB  L    II C     PP     RR  RR OO  OO PP     EE     RR  RR   TT     YY  
+   P    UUUU BBBB LLLL II  CCC  PP     RR  RR  OOOO  PP     EEEEEE RR  RR   TT     YY                */
+
+/*//___________________________________________________________________________________________________
+                                                                                         private method
+
+                                     MM   MM EEEEEE TTTTTT HH  HH  OOOO  DDDDD 
+   PPP  RRR  II V  V  AA  TTTT EEEE  MMM MMM EE       TT   HH  HH OO  OO DD  DD
+   P  P R  R II V  V AAAA  TT  E     MMMMMMM EEEE     TT   HHHHHH OO  OO DD  DD
+   PPP  RRR  II V  V AAAA  TT  EEE   MM M MM EE       TT   HH  HH OO  OO DD  DD 
+   P    R  R II  VV  A  A  TT  EEEE  MM   MM EEEEEE   TT   HH  HH  OOOO  DDDDD                       */
+
+/*//___________________________________________________________________________________________________
+                                                                                          public method
+
+                                MM   MM EEEEEE TTTTTT HH  HH  OOOO  DDDDD  
+   PPP  U  U BBB  L    II  CCC  MMM MMM EE       TT   HH  HH OO  OO DD  DD 
+   P  P U  U BBBB L    II C     MMMMMMM EEEE     TT   HHHHHH OO  OO DD  DD 
+   PPP  U  U BBB  L    II C     MM M MM EE       TT   HH  HH OO  OO DD  DD  
+   P    UUUU BBBB LLLL II  CCC  MM   MM EEEEEE   TT   HH  HH  OOOO  DDDDD                            */
+
+/*//___________________________________________________________________________________________________
+                                                                                                    new
+   NN  NN EEEEEE WW    WW 
+   NNN NN EE     WW WW WW
+   NNNNNN EEEE   WWWWWWWW
+   NN NNN EE     WWW  WWW
+   NN  NN EEEEEE WW    WW                                                                            */
+
+/*//___________________________________________________________________________________________________
+                                                                              construction of singleton
+
+    CCC  OO  N  N  SSS TTTT RRR  U  U  CCC TTTT II  OO  N  N   OO  FFFF 
+   C    O  O NN N SS    TT  R  R U  U C     TT  II O  O NN N  O  O F   
+   C    O  O N NN   SS  TT  RRR  U  U C     TT  II O  O N NN  O  O FFF 
+    CCC  OO  N  N SSS   TT  R  R UUUU  CCC  TT  II  OO  N  N   OO  F   
+
+    SSSSS II NN  NN  GGGG  LL     EEEEEE TTTTTT  OOOO  NN  NN
+   SS     II NNN NN GG  GG LL     EE       TT   OO  OO NNN NN
+    SSSS  II NNNNNN G      LL     EEEE     TT   OO  OO NNNNNN
+       SS II NN NNN GG GGG LL     EE       TT   OO  OO NN NNN
+   SSSSS  II NN  NN  GGG G LLLLLL EEEEEE   TT    OOOO  NN  NN                                        
+																									 */
+
+/*//___________________________________________________________________________________________________
+                                                                              construction of singleton
+
+                                                               OOOO  FFFFFF
+    CCC  OO  N  N  SSS TTTT RRR  U  U  CCC TTTT II  OO  N  N  OO  OO FF    
+   C    O  O NN N SS    TT  R  R U  U C     TT  II O  O NN N  OO  OO FFFF  
+   C    O  O N NN   SS  TT  RRR  U  U C     TT  II O  O N NN  OO  OO FF    
+    CCC  OO  N  N SSS   TT  R  R UUUU  CCC  TT  II  OO  N  N   OOOO  FF    
+
+    SSSSS II NN  NN  GGGG  LL     EEEEEE TTTTTT  OOOO  NN  NN
+   SS     II NNN NN GG  GG LL     EE       TT   OO  OO NNN NN
+    SSSS  II NNNNNN G      LL     EEEE     TT   OO  OO NNNNNN
+       SS II NN NNN GG GGG LL     EE       TT   OO  OO NN NNN
+   SSSSS  II NN  NN  GGG G LLLLLL EEEEEE   TT    OOOO  NN  NN                                        
+																									 */
+
+/*//___________________________________________________________________________________________________
+                                                                                                  const
+    CCCC   OOOO  NN  NN  SSSSS TTTTTT
+   CC  CC OO  OO NNN NN SS       TT  
+   C      OO  OO NNNNNN  SSSS    TT  
+   CC  CC OO  OO NN NNN     SS   TT  
+    CCCC   OOOO  NN  NN SSSSS    TT                                                                  */
+
+/*//___________________________________________________________________________________________________
+                                                                                          event handler
+
+                             HH  HH   AA   NN  NN DDDDD  LL     EEEEEE RRRRR 
+   EEEE V  V EEEE N  N TTTT  HH  HH  AAAA  NNN NN DD  DD LL     EE     RR  RR
+   E    V  V E    NN N  TT   HHHHHH AA  AA NNNNNN DD  DD LL     EEEE   RRRRR 
+   EEE  V  V EEE  N NN  TT   HH  HH AAAAAA NN NNN DD  DD LL     EE     RR  RR
+   EEEE  VV  EEEE N  N  TT   HH  HH AA  AA NN  NN DDDDD  LLLLLL EEEEEE RR  RR                        */
+
+
+/*//___________________________________________________________________________________________________
+                                                                                          getter/setter
+
+    GGGG  EEEEEE TTTTTT TTTTTT EEEEEE RRRRR      //  SSSSS EEEEEE TTTTTT TTTTTT EEEEEE RRRRR 
+   GG  GG EE       TT     TT   EE     RR  RR    //  SS     EE       TT     TT   EE     RR  RR
+   G      EEEE     TT     TT   EEEE   RRRRR    //    SSSS  EEEE     TT     TT   EEEE   RRRRR 
+   GG GGG EE       TT     TT   EE     RR  RR  //        SS EE       TT     TT   EE     RR  RR
+    GGG G EEEEEE   TT     TT   EEEEEE RR  RR //     SSSSS  EEEEEE   TT     TT   EEEEEE RR  RR        */
+
+/*//___________________________________________________________________________________________________
+                                                                                           class method
+
+                             MM   MM EEEEEE TTTTTT HH  HH  OOOO  DDDDD 
+    CCC L     AA   SSS  SSS  MMM MMM EE       TT   HH  HH OO  OO DD  DD
+   C    L    AAAA SS   SS    MMMMMMM EEEE     TT   HHHHHH OO  OO DD  DD
+   C    L    AAAA   SS   SS  MM M MM EE       TT   HH  HH OO  OO DD  DD 
+    CCC LLLL A  A SSS  SSS   MM   MM EEEEEE   TT   HH  HH  OOOO  DDDDD                               */
+
+
+
+/*//___________________________________________________________________________________________________
+                                                                    private / protected instance method
+
+   PPP  RRR  II V  V  AA  TTTT EEEE    / PPP  RRR   OO  TTTT EEEE  CCC TTTT EEEE DDD 
+   P  P R  R II V  V AAAA  TT  E      /  P  P R  R O  O  TT  E    C     TT  E    D  D
+   PPP  RRR  II V  V AAAA  TT  EEE   /   PPP  RRR  O  O  TT  EEE  C     TT  EEE  D  D
+   P    R  R II  VV  A  A  TT  EEEE /    P    R  R  OO   TT  EEEE  CCC  TT  EEEE DDD
+
+                                          MM   MM EEEEEE TTTTTT HH  HH  OOOO  DDDDD 
+   II N  N  SSS TTTT  AA  N  N  CCC EEEE  MMM MMM EE       TT   HH  HH OO  OO DD  DD
+   II NN N SS    TT  AAAA NN N C    E     MMMMMMM EEEE     TT   HHHHHH OO  OO DD  DD
+   II N NN   SS  TT  AAAA N NN C    EEE   MM M MM EE       TT   HH  HH OO  OO DD  DD 
+   II N  N SSS   TT  A  A N  N  CCC EEEE  MM   MM EEEEEE   TT   HH  HH  OOOO  DDDDD                  */
+
+/*//___________________________________________________________________________________________________
+                                                                                               property
+
+   PPPPP  RRRRR   OOOO  PPPPP  EEEEEE RRRRR  TTTTTT YY  YY
+   PP  PP RR  RR OO  OO PP  PP EE     RR  RR   TT   YY  YY
+   PPPPP  RRRRR  OO  OO PPPPP  EEEE   RRRRR    TT    YYYY 
+   PP     RR  RR OO  OO PP     EE     RR  RR   TT     YY  
+   PP     RR  RR  OOOO  PP     EEEEEE RR  RR   TT     YY                                             */
+
+/*//___________________________________________________________________________________________________
+                                                                                                    new
+   NN  NN EEEEEE WW    WW 
+   NNN NN EE     WW WW WW
+   NNNNNN EEEE   WWWWWWWW
+   NN NNN EE     WWW  WWW
+   NN  NN EEEEEE WW    WW                                                                            */
+
+/*//___________________________________________________________________________________________________
+                                                                                                methods
+   MM   MM EEEEEE TTTTTT HH  HH  OOOO  DDDDD   SSSSS
+   MMM MMM EE       TT   HH  HH OO  OO DD  DD SS    
+   MMMMMMM EEEE     TT   HHHHHH OO  OO DD  DD  SSSS 
+   MM M MM EE       TT   HH  HH OO  OO DD  DD     SS 
+   MM   MM EEEEEE   TT   HH  HH  OOOO  DDDDD  SSSSS                                                  */
+
+/*//___________________________________________________________________________________________________
+                                                                                         public methods
+   MM   MM EEEEEE TTTTTT HH  HH  OOOO  DDDDD   SSSSS
+   MMM MMM EE       TT   HH  HH OO  OO DD  DD SS    
+   MMMMMMM EEEE     TT   HHHHHH OO  OO DD  DD  SSSS 
+   MM M MM EE       TT   HH  HH OO  OO DD  DD     SS 
+   MM   MM EEEEEE   TT   HH  HH  OOOO  DDDDD  SSSSS                                                  */
+
+/*//___________________________________________________________________________________________________
+                                                                                                 public
+   PPPPP  UU  UU BBBBB  LL     II  CCCC 
+   PP  PP UU  UU BB  BB LL     II CC  CC
+   PPPPP  UU  UU BBBBB  LL     II C     
+   PP     UU  UU BB  BB LL     II CC  CC
+   PP      UUUU  BBBBB  LLLLLL II  CCCC                                                              */
+
+/*//___________________________________________________________________________________________________
+                                                                                        public property
+   PPPPP  UU  UU BBBBB  LL     II  CCCC 
+   PP  PP UU  UU BB  BB LL     II CC  CC  PPP  RRR   OO  PPP  EEEE RRR  TTTT Y  Y
+   PPPPP  UU  UU BBBBB  LL     II C       P  P R  R O  O P  P E    R  R  TT  Y  Y
+   PP     UU  UU BB  BB LL     II CC  CC  PPP  RRR  O  O PPP  EEE  RRR   TT   YY 
+   PP      UUUU  BBBBB  LLLLLL II  CCCC   P    R  R  OO  P    EEEE R  R  TT   YY                     */
+
+
+/*//___________________________________________________________________________________________________
+                                                                                                private
+   PPPPP  RRRRR  II VV  VV   AA  TTTTTT EEEEEE
+   PP  PP RR  RR II VV  VV  AAAA   TT   EE    
+   PPPPP  RRRRR  II VV  VV AA  AA  TT   EEEE
+   PP     RR  RR II  VVVV  AAAAAA  TT   EE    
+   PP     RR  RR II   VV   AA  AA  TT   EEEEEE                                                       */
+
+/*//___________________________________________________________________________________________________
+                                                                                                  const
+    CCCC   OOOO  NN  NN  SSSSS TTTTTT
+   CC  CC OO  OO NNN NN SS       TT  
+   C      OO  OO NNNNNN  SSSS    TT  
+   CC  CC OO  OO NN NNN     SS   TT  
+    CCCC   OOOO  NN  NN SSSSS    TT                                                                  */
+
+
+/*//___________________________________________________________________________________________________
+                                                                                                  event
+   EEEEEE VV  VV EEEEEE NN  NN TTTTTT
+   EE     VV  VV EE     NNN NN   TT  
+   EEEE   VV  VV EEEE   NNNNNN   TT  
+   EE      VVVV  EE     NN NNN   TT  
+   EEEEEE   VV   EEEEEE NN  NN   TT                                                                  */
+
+/*//___________________________________________________________________________________________________
+                                                                                                handler
+   HH  HH   AA   NN  NN DDDDD  LL     EEEEEE RRRRR 
+   HH  HH  AAAA  NNN NN DD  DD LL     EE     RR  RR
+   HHHHHH AA  AA NNNNNN DD  DD LL     EEEE   RRRRR 
+   HH  HH AAAAAA NN NNN DD  DD LL     EE     RR  RR
+   HH  HH AA  AA NN  NN DDDDD  LLLLLL EEEEEE RR  RR                                                  */
+
+
+ AA  BBB   CCC DDD  EEEE FFFF  GGG H  H II   JJ  K  K L    M  M N  N  OO  PPP   QQ  RRR   SSS TTTT
+AAAA BBBB C    D  D E    F    G    H  H II   JJ  KK   L    MMMM NN N O  O P  P Q  Q R  R SS    TT
+AAAA BBB  C    D  D EEE  FFF  G GG HHHH II J JJ  K K  L    MMMM N NN O  O PPP  Q QQ RRR    SS  TT
+A  A BBBB  CCC DDD  EEEE F     GGG H  H II  JJ   K  K LLLL M  M N  N  OO  P     Q Q R  R SSS   TT
+
+U  U V  V W  W X  X Y  Y ZZZZ
+U  U V  V WWWW  XX  Y  Y   Z
+U  U V  V WWWW  XX   YY   Z
+UUUU  VV   WW  X  X  YY  ZZZZ
+
+construction ------
+
+ CCC  OO  N  N  SSS TTTT RRR  U  U  CCC TTTT II  OO  N  N
+C    O  O NN N SS    TT  R  R U  U C     TT  II O  O NN N
+C    O  O N NN   SS  TT  RRR  U  U C     TT  II O  O N NN
+ CCC  OO  N  N SSS   TT  R  R UUUU  CCC  TT  II  OO  N  N
+
+class -------
+
+ CCC L     AA   SSS  SSS
+C    L    AAAA SS   SS  
+C    L    AAAA   SS   SS
+ CCC LLLL A  A SSS  SSS 
+
+instance --------
+
+II N  N  SSS TTTT  AA  N  N  CCC EEEE
+II NN N SS    TT  AAAA NN N C    E   
+II N NN   SS  TT  AAAA N NN C    EEE 
+II N  N SSS   TT  A  A N  N  CCC EEEE
+
+public --------
+
+PPP  U  U BBB  L    II  CCC
+P  P U  U BBBB L    II C   
+PPP  U  U BBB  L    II C   
+P    UUUU BBBB LLLL II  CCC
+
+private -------
+
+PPP  RRR  II V  V  AA  TTTT EEEE
+P  P R  R II V  V AAAA  TT  E   
+PPP  RRR  II V  V AAAA  TT  EEE 
+P    R  R II  VV  A  A  TT  EEEE
+
+protected -------
+
+PPP  RRR   OO  TTTT EEEE  CCC TTTT EEEE DDD 
+P  P R  R O  O  TT  E    C     TT  E    D  D
+PPP  RRR  O  O  TT  EEE  C     TT  EEE  D  D
+P    R  R  OO   TT  EEEE  CCC  TT  EEEE DDD 
+
+event ------
+
+EEEE V  V EEEE N  N TTTT
+E    V  V E    NN N  TT 
+EEE  V  V EEE  N NN  TT 
+EEEE  VV  EEEE N  N  TT 
+
+property -------
+
+PPP  RRR   OO  PPP  EEEE RRR  TTTT Y  Y
+P  P R  R O  O P  P E    R  R  TT  Y  Y
+PPP  RRR  O  O PPP  EEE  RRR   TT   YY 
+P    R  R  OO  P    EEEE R  R  TT   YY 
